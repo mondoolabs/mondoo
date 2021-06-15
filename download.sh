@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (c) 2019-2020 Mondoo, Inc.
+# Copyright (c) 2019-2021 Mondoo, Inc.
 # License: Apache License, Version 2.0
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,12 +38,11 @@ red_bold() { echo -e "${redb}${1}${end}"; }
 
 purple_bold "Mondoo Binary Download Script"
 purple "
-  __  __                 _             
- |  \/  |               | |            
- | \  / | ___  _ __   __| | ___   ___  
- | |\/| |/ _ \| \_ \ / _\ |/ _ \ / _ \ 
- | |  | | (_) | | | | (_| | (_) | (_) |
- |_|  |_|\___/|_| |_|\__,_|\___/ \___/ 
+                         .-.            
+                        : :            
+,-.,-.,-. .--. ,-.,-. .-' : .--.  .--. ™
+: ,. ,. :' .; :: ,. :' .; :' .; :' .; :
+:_;:_;:_;\`.__.':_;:_;\`.__.'\`.__.'\`.__.
 "
                  
 echo -e "\nWelcome to the Mondoo Binary Download Script. It tries to auto-detect your 
@@ -71,6 +70,7 @@ case "$(uname -m)" in
 	i686)    arch="386" ;;
 	arm)     arch="arm" ;;
 	aarch64) arch="arm64";;
+	arm64)   arch="arm64";;
 	*)       fail "Cannot detect architecture" ;;
 esac
 
@@ -117,8 +117,8 @@ if [ $binarySha = $expectedSha ]; then
   purple "Installed to $(pwd)/${product}"
 else
   # clean up on error
-	rm ${filename}
-  fail "Binary hash '${binarySha}' does not match the exepected hash '${expectedSha}'\nAborted download.";
+  rm ${filename}
+  fail "Binary hash '${binarySha}' does not match the expected hash '${expectedSha}'\nAborted download.";
 fi
 
 # Display final message

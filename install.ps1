@@ -68,12 +68,11 @@ function Install-Mondoo {
 
   purple "Mondoo Windows Installer Script"
   purple "
-   __  __                 _             
-  |  \/  |               | |            
-  | \  / | ___  _ __   __| | ___   ___  
-  | |\/| |/ _ \| \_ \ / _\ |/ _ \ / _ \ 
-  | |  | | (_) | | | | (_| | (_) | (_) |
-  |_|  |_|\___/|_| |_|\__,_|\___/ \___/ 
+                          .-.            
+                          : :            
+  ,-.,-.,-. .--. ,-.,-. .-' : .--.  .--. ™
+  : ,. ,. :' .; :: ,. :' .; :' .; :' .; :
+  :_;:_;:_;`.__.':_;:_;`.__.'`.__.'`.__.
   "
                   
   info "Welcome to the Mondoo Binary Download Script. It downloads the Mondoo binary for

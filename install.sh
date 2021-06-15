@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (c) 2019-2020 Mondoo, Inc.
+# Copyright (c) 2019-2021 Mondoo, Inc.
 # License: Apache License, Version 2.0
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -56,12 +56,11 @@ trap on_error ERR
 
 purple_bold "Mondoo Package Install Script"
 purple "
-  __  __                 _             
- |  \/  |               | |            
- | \  / | ___  _ __   __| | ___   ___  
- | |\/| |/ _ \| \_ \ / _\ |/ _ \ / _ \ 
- | |  | | (_) | | | | (_| | (_) | (_) |
- |_|  |_|\___/|_| |_|\__,_|\___/ \___/ 
+                         .-.            
+                        : :            
+,-.,-.,-. .--. ,-.,-. .-' : .--.  .--. ™
+: ,. ,. :' .; :: ,. :' .; :' .; :' .; :
+:_;:_;:_;\`.__.':_;:_;\`.__.'\`.__.'\`.__.
 "
                  
 echo -e "\nWelcome to the Mondoo Install Script. It tries to auto-detect your 
